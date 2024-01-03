@@ -3,15 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.addEventListener('keyup', function (event) {
         pressedKey = event.key.toLowerCase(); // Convert to lowercase for case-insensitivity
-        console.log(pressedKey);
+        // console.log(pressedKey);
         check();
     });
-
-    document.addEventListener('keydown', function (event) {
-        pressedKey = event.key.toLowerCase(); // Convert to lowercase for case-insensitivity
-        check();
-    });
-
+    
     function check() {
         var keys = document.querySelectorAll('.key');
 
